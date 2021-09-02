@@ -1,14 +1,11 @@
+import { AnimatedList } from './components/AnimatedList';
+import { InteractiveShape } from './components/InteractiveShape';
 import { GlobalStyles } from './styles';
 
-export const App = () => {
-  const title = 'Hello CodersClub';
-
-  return (
-    <div>
-      <header>
-        <h1>{title}</h1>
-      </header>
-      <GlobalStyles />
-    </div>
-  );
-};
+export const App = () => (
+  <>
+    <InteractiveShape />
+    <AnimatedList />
+    <GlobalStyles />
+  </>
+);
